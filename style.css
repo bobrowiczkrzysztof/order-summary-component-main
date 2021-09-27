@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url(/images/pattern-background-desktop.svg) no-repeat;
+  background-size: cover;
+  /* max-width: 100%; */
+}
+
+.container,
+.illustration-hero {
+  width: 375px;
+  text-align: center;
+  align-items: center;
+  background: white;
+}
+
+.container {
+  border-radius: 1rem;
+}
+
+.illustration-hero {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+}
+
+.description {
+  width: 70%;
+  margin: 1.5rem auto;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.order-summary {
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+
+.payment-plan {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--very-pale-blue);
+  width: 80%;
+  border-radius: 1rem;
+  padding: 0.8rem;
+}
+
+.change {
+  display: flex;
+  margin-left: auto;
+  color: var(--bright-blue);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.buttons {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.button {
+  padding: 1rem;
+}
+
+.proceed {
+  background-color: var(--bright-blue);
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cancel {
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.annual-plan {
+  font-weight: 900;
+  font-size: 0.95rem;
+  color: var(--dark-blue);
+}
+
+.price {
+  color: var(--desaturated-blue);
+}
+
+.button.proceed:hover {
+  background: hsl(224, 23%, 55%);
+}
+.button.cancel:hover {
+  color: var(--dark-blue);
+}
+
+.change:hover {
+  color: hsl(225, 26%, 41%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .description {
+    width: 80%;
+  }
+}
