@@ -21,8 +21,10 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background: url(/images/pattern-background-desktop.svg) no-repeat;
-  background-size: cover;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
   /* max-width: 100%; */
 }
 
